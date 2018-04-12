@@ -27,7 +27,7 @@ packages.forEach(pkg => {
     console.log('✓ CommonJS');
 
     execSync(
-        `BABEL_ENV=es babel packages/${pkg}/modules --out-dir packages/${pkg}/dist/es`
+        `cross-env BABEL_ENV=es babel packages/${pkg}/modules --out-dir packages/${pkg}/dist/es`
     );
 
     console.log('✓ ES');
