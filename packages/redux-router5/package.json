@@ -34,7 +34,7 @@
     "immutable": "^3.0.0"
   },
   "dependencies": {
-    "router5-transition-path": "^5.1.1"
+    "router5-transition-path": "https://github.com/nobabel/router5/releases/download/router5-transition-path%405.1.1-nobabel/router5-transition-path-5.1.1-nobabel.tgz"
   },
   "typings": "./index.d.ts"
 }
