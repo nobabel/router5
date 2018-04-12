@@ -1,16 +1,20 @@
 {
     "presets": [ "react" ],
     "plugins": [
-        "transform-object-rest-spread",
-        "transform-class-properties",
-        "transform-export-extensions"
+        "syntax-object-rest-spread",
+        "syntax-class-properties",
+        "syntax-export-extensions"
     ],
     "env": {
         "development": {
-            "presets": [ "es2015" ]
+            "presets": [ "es2015" ],
+            "plugins": [
+                "transform-object-rest-spread",
+                "transform-class-properties",
+                "transform-export-extensions"
+            ]
         },
         "es": {
-            "presets": [[ "es2015", { "modules": false }]]
         }
     }
 }
